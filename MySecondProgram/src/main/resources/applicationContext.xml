@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+ 
+  
+<bean id="ques" class="com.shilpa.Questions">  
+<property name="questionId" value="1"></property>  
+<property name="question" value="Tell Me about Your self?"></property> 
+<property name="answers">
+    <list>
+        <value> i am java developer</value>
+        <value>I am working in xyz company</value>
+    </list>
+</property> 
+
+<property name="answers">  
+<map>  
+<entry key="1"  value="Shilpa Panigatti"></entry>  
+<entry key="2"  value="I am working on java"></entry>  
+<entry key="3"  value="From karnataka"></entry>    
+</map>  
+</property>  
+
+</bean>  
+    
+  </beans>
