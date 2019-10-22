@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+ 
+    <bean id="customer" class="com.shilpa.Customer">
+        <constructor-arg name="customerId" value="Mark"></constructor-arg>
+        <constructor-arg name="customerName" value="32"></constructor-arg>
+        <constructor-arg name="customerContact" value="Software Architect"></constructor-arg>
+        <constructor-arg> <ref bean="address" />
+        </constructor-arg>
+    </bean>
+ 
+    <bean id="address" class="com.shilpa.Address">
+        <constructor-arg name="street" value="2nd main"></constructor-arg>
+        <constructor-arg name="city" value="Banglore"></constructor-arg>
+        <constructor-arg name="state" value="Karnataka"></constructor-arg>
+        <constructor-arg name="zip" value="561107"></constructor-arg>
+    </bean>
+</beans>
