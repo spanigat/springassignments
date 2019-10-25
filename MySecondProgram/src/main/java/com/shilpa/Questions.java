@@ -11,9 +11,6 @@ public class Questions {
 	int questionId;
 	String question;
 	 List<String> answers;
-	// Set<String> answers;
-	
-	// Map<Integer,String> answers;  
 	
 	public Questions(){
 		
@@ -46,30 +43,14 @@ public class Questions {
 		this.question = question;
 	}
 
-
-//	public Map<Integer, String> getAnswers() {
-//		return answers;
-//	}
-//
-//
-//	public void setAnswers(Map<Integer, String> answers) {
-//		this.answers = answers;
-//	}
 	
 	public void displayInfo(){  
 	    System.out.println("question id:"+questionId);  
 	    System.out.println("question name:"+question);  
-	    System.out.println("Answers....");  
+	    System.out.println("Answers for questions");  
 	    for (String ans : answers) {
 			System.out.println(ans);
 		}
-////	    Set<Entry<Integer, String>> set=answers.entrySet();  
-//	//    Iterator<Entry<Integer, String>> itr=set.iterator();  
-//	    while(itr.hasNext()){  
-//	        Entry<Integer,String> entry=itr.next();  
-//	        System.out.println("Answer:"+entry.getKey()+" Posted By:"+entry.getValue());  
-//	    }  
-	}  
 
-
+	}
 }
